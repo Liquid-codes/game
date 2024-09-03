@@ -10,7 +10,7 @@ void Player::initVariables()
 {
     this->health =3.;
     this->speed = sf::Vector2f(0, 0);
-    this->location = "../assets/player/player_front_idle.png";
+    this->location = "/home/max/Desktop/projects/game/assets/player/player_front_idle.png";
 }
 
 // Initaliizinig the player

@@ -1,5 +1,6 @@
 #include "game.h"
 #include <SFML/Window/Keyboard.hpp>
+#include <SFML/Window/VideoMode.hpp>
 
 // Initalizing variables
 void Game::initVariables()
@@ -10,10 +11,8 @@ void Game::initVariables()
 // Initalizing the window
 void Game::initWindow()
 {
-    this->window = new sf::RenderWindow(sf::VideoMode(500, 500), "Game", sf::Style::Titlebar | sf::Style::Close);
+    this->window = new sf::RenderWindow(sf::VideoMode::getFullscreenModes()[0], "Game", sf::Style::Fullscreen | sf::Style::Close);
     this->window->setFramerateLimit(60);
-    this->viewport = sf::View(sf::FloatRect(200.f, 200.f, 500.f, 500.f));
-    this->viewport.setCenter(908, 718);
 }
 
 // Calls on run
@@ -70,7 +69,6 @@ void Game::update()
 void Game::render()
 {
     this->window->clear();
-    this->window->setView(this->viewport);
     this->background_image.render(this->window);
     this->collider.render(this->window);
     this->player.render(this->window);

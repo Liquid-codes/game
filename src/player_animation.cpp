@@ -8,17 +8,17 @@
 void AniControl::initVariables()
 {
     this->texture_idle = {
-        "../assets/player/front/player_front_idle.png",
-        "../assets/player/back/player_back_idle.png",
-        "../assets/player/side/player_left_idle.png",
-        "../assets/player/side/player_right_idle.png"
+        "/home/max/Desktop/projects/game/assets/player/front/player_front_idle.png",
+        "/home/max/Desktop/projects/game/assets/player/back/player_back_idle.png",
+        "/home/max/Desktop/projects/game/assets/player/side/player_left_idle.png",
+        "/home/max/Desktop/projects/game/assets/player/side/player_right_idle.png"
     };
 
     this->texture_walk = {
-        "../assets/player/front/player_front_walk.png",
-        "../assets/player/back/player_back_walk.png",
-        "../assets/player/side/player_left_walk.png",
-        "../assets/player/side/player_right_walk.png"
+        "/home/max/Desktop/projects/game/assets/player/front/player_front_walk.png",
+        "/home/max/Desktop/projects/game/assets/player/back/player_back_walk.png",
+        "/home/max/Desktop/projects/game/assets/player/side/player_left_walk.png",
+        "/home/max/Desktop/projects/game/assets/player/side/player_right_walk.png"
     };
 
     this->player_texture.loadFromFile(this->texture_idle[0]);

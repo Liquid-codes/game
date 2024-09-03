@@ -7,7 +7,7 @@
 
 void Background::initVariables()
 {
-    this->image_location = "../assets/map/map.png";
+    this->image_location = "/home/max/Desktop/projects/game/assets/map/map.png";
 }
 
 void Background::initBackground()
